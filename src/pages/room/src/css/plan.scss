@@ -1,0 +1,29 @@
+.plan{
+  padding-left: 20px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+
+  &__title{
+    font-size: 28px;
+    line-height: 33px;
+    color: #363636;
+    margin-bottom: 30px;
+  }
+
+  &__input-img{
+    padding: 11px 37px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 2px solid #B13957;
+    cursor: pointer;
+  }
+
+  &__img-svg{
+    max-width: 50%;
+  }
+
+  &__img{
+    width: 100%;
+  }
+
+}

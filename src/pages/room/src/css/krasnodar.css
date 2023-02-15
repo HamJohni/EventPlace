@@ -1,0 +1,50 @@
+.krasnodar {
+  padding: 77px 0 143px 0;
+}
+.krasnodar__title {
+  font-size: 38px;
+  line-height: 45px;
+  color: #144747;
+  margin-bottom: 27px;
+}
+.krasnodar__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.krasnodar__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33% - 14.66666px);
+  background-color: #FBFBFB;
+}
+.krasnodar__card-img {
+  width: 100%;
+}
+.krasnodar__img {
+  width: 100%;
+}
+.krasnodar__info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  margin-top: 16px;
+}
+.krasnodar__text-content {
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+}

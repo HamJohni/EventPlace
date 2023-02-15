@@ -1,0 +1,40 @@
+.rule{
+  padding-bottom: 70px;
+  padding-left: 20px;
+  background-color: #fff;
+
+  &__title{
+    font-size: 28px;
+    line-height: 33px;
+    color: #363636;
+    margin-bottom: 30px;
+  }
+
+  &__boxes{
+    display: flex;
+    column-gap: 55px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+
+  &__input-radio{
+    accent-color: green;
+  }
+
+  &__box{
+    width: calc(33% - 36.66666px);
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #363636;
+    width: 200px;
+    margin: 0 63px 0 10px;
+  }
+}
+.margin3{
+  margin-right: 10px;
+}

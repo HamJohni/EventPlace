@@ -1,0 +1,29 @@
+.header__profile-boxes{
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 100%;
+  padding: 19px 86px 16px 86px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.border-none{
+  border: none;
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+
+.container__for{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}

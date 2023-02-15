@@ -1,0 +1,23 @@
+.margin {
+  margin-top: -40px;
+  padding-bottom: 0 !important;
+}
+
+.main2 {
+  background: linear-gradient(245.48deg, #3A42F5 -44.68%, rgba(255, 255, 255, 0) 118.94%), #27837E;
+  padding: 60px 0 178px;
+}
+
+.container__for-white {
+  max-width: 1173px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 30px 20px;
+}

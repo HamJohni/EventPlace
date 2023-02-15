@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eventplace.</title>
+    <link rel="stylesheet" href="./src/js/jquery-3.6.1.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/pages/room/index.html">
+    <script>if(!window._teletypeWidget){window._teletypeWidget = window._teletypeWidget || {};!function(){var t = document.getElementsByTagName("app-teletype-root");if (t.length > 0 && _teletypeWidget.init)return;var d = new Date().getTime();var n = document.createElement("script"),c = document.getElementsByTagName("script")[0];n.id = "teletype-widget-embed",n.src = "https://widget.teletype.app/init.js?_=" + d,n.async = !0,n.setAttribute("data-embed-version", "0.1");c.parentNode.insertBefore(n, c);}();document.addEventListener("teletype.ready", function(){console.log("Teletype ready")});window.teletypeExternalId = "esD5rflZS-s9emplw177UPjVbw9McZb7NKe6NeIqL4jgJ-jAAIcbKTcq3FcHybVf";}</script>
+</head>
+<body>
+
+
+<div class="scroll">
+
+    <div class="scroll__block">
+        <a href="#header" class="scroll__link-top">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5" transform="matrix(-1 0 0 1 37 0)" stroke="white"/>
+                <g clip-path="url(#clip0_534_7)">
+                    <path d="M25.9271 19.6342C25.9269 19.6344 25.9268 19.6346 25.9266 19.6348L22.9362 22.6107C22.7122 22.8336 22.3499 22.8328 22.1269 22.6088C21.9039 22.3847 21.9048 22.0224 22.1288 21.7994L24.1365 19.8014L12.0166 19.8014C11.7006 19.8014 11.4443 19.5452 11.4443 19.2292C11.4443 18.9131 11.7006 18.6569 12.0166 18.6569L24.1365 18.6569L22.1288 16.6589C21.9048 16.4359 21.904 16.0736 22.1269 15.8496C22.3499 15.6255 22.7123 15.6247 22.9363 15.8476L25.9266 18.8235C25.9268 18.8237 25.9269 18.8239 25.9271 18.8241C26.1513 19.0478 26.1505 19.4113 25.9271 19.6342Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_534_7">
+                        <rect width="14.6506" height="14.6506" fill="white" transform="matrix(1 8.74228e-08 8.74228e-08 -1 11.4443 26.5542)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+
+        <a href="#footer" class="scroll__link-bottom">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5" transform="matrix(-1 0 0 1 37 0)" stroke="white"/>
+                <g clip-path="url(#clip0_534_7)">
+                    <path d="M25.9271 19.6342C25.9269 19.6344 25.9268 19.6346 25.9266 19.6348L22.9362 22.6107C22.7122 22.8336 22.3499 22.8328 22.1269 22.6088C21.9039 22.3847 21.9048 22.0224 22.1288 21.7994L24.1365 19.8014L12.0166 19.8014C11.7006 19.8014 11.4443 19.5452 11.4443 19.2292C11.4443 18.9131 11.7006 18.6569 12.0166 18.6569L24.1365 18.6569L22.1288 16.6589C21.9048 16.4359 21.904 16.0736 22.1269 15.8496C22.3499 15.6255 22.7123 15.6247 22.9363 15.8476L25.9266 18.8235C25.9268 18.8237 25.9269 18.8239 25.9271 18.8241C26.1513 19.0478 26.1505 19.4113 25.9271 19.6342Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_534_7">
+                        <rect width="14.6506" height="14.6506" fill="white" transform="matrix(1 8.74228e-08 8.74228e-08 -1 11.4443 26.5542)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+    </div>
+
+</div>
+<div class="preloader__scene">
+    <div class="loading__block">
+        <div class="title">
+            loading...
+        </div>
+        <div class="progress "></div>
+    </div>
+</div>
+
+
+<header class="header" id="header">
+    <div class="container">
+
+        <nav class="header__nav">
+
+            <div class="header__first">
+
+            <h2 class="header__title">
+                <a href="./index.html" class="header__home">
+                <svg width="179" height="63" viewBox="0 0 179 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="170" height="62.475" fill="url(#pattern0)"/>
+                    <path d="M178.957 29.9923C179.294 32.0456 177.545 33.7948 175.492 33.4583C174.249 33.2556 173.247 32.2526 173.042 31.0082C172.705 28.9549 174.454 27.2035 176.507 27.5422C177.752 27.747 178.752 28.75 178.957 29.9923Z" fill="#B13957"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_0_620" transform="scale(0.00125 0.00340136)"/>
+                        </pattern>
+                        <image id="image0_0_620" width="800" height="294" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEmCAYAAACatvRcAAABMWlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAoz62OsUrDUBRAz4ui4lArBHFweJMoKLbqYMakLUUQrNUhydakoUppEl5e1X6Eo1sHF3e/wMlRcFD8Av9AcergECGDgwie6dzD5XLBqNh1p2GUYRBr1W460vV8OfvEDFMA0Amz1G61DgDiJI74wecrAuB50647Df7GfJgqDUyA7W6UhSAqQP9CpxrEGDCDfqpB3AGmOmnXQDwApV7uL0ApyP0NKCnX80F8AGbP9Xww5gAzyH0FMHV0qQFqSTpSZ71TLauWZUm7mwSRPB5lOhpkcj8OE5UmqqOjLpD/B8BivthuOnKtall76/wzrufL3N6PEIBYeixaQThU598qjJ3f5+LGeBkOb2F6UrTdK7jZgIXroq1WobwF9+MvwMZP/U6/OGUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAZbaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChNYWNpbnRvc2gpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0wMy0xNlQxMzoyMTo0MiswMjowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMDMtMTZUMTM6MjM6NDErMDI6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMDMtMTZUMTM6MjM6NDErMDI6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmRkNzZkOTg3LTY4MDItNDczNi04NDE4LTgwYzJmYTQ0MGE2MSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjllNmU0ZjY4LWMwYjgtNzA0Ny1iYTcwLTgwYTIyZTcyOTE3ZCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjVkM2FhZjFiLTI2NWYtNDAwYS1hZmMwLTUxYzk2YmUwZDBhNyI+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjdBN0YzMDcyNkUyM0Q2Q0FENDlFNjMxNTAxNzdEQjkwPC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NWQzYWFmMWItMjY1Zi00MDBhLWFmYzAtNTFjOTZiZTBkMGE3IiBzdEV2dDp3aGVuPSIyMDIxLTAzLTE2VDEzOjIxOjQyKzAyOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZGQ3NmQ5ODctNjgwMi00NzM2LTg0MTgtODBjMmZhNDQwYTYxIiBz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"/>
+                    </defs>
+                </svg>
+                </a>
+            </h2>
+
+            </div>
+
+            <div class="header__place">
+                <p class="header__place__krasnodar">
+                    Все площадки Краснодара
+                </p>
+
+                <p class="header__place__place">
+                    + Добавить площадку
+                </p>
+            </div>
+
+            <div class="header__menu">
+
+
+
+                <div class="tabs tabs-small">
+
+                        <ul class="">
+                            <li> <div class="header__menu__language"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0C3.6028 0 0 3.6028 0 8C0 12.3972 3.6028 16 8 16C12.3972 16 16 12.3972 16 8C16 3.6028 12.3972 0 8 0ZM7.38461 1.49159V7.38461H4.98437C5.06155 5.69482 5.38862 4.14733 5.92909 3.05889C6.36298 2.18508 6.87281 1.73926 7.38461 1.49159ZM8.61538 1.49159C9.12719 1.73926 9.63702 2.18508 10.0709 3.05889C10.6114 4.14733 10.9385 5.69482 11.0156 7.38461H8.61538V1.49159ZM5.21154 1.84135C5.07507 2.05399 4.94424 2.27454 4.82692 2.51082C4.18055 3.81254 3.82905 5.52633 3.75361 7.38461H1.26202C1.48694 4.91696 3.04789 2.82759 5.21154 1.84135ZM10.7885 1.84135C12.9521 2.82759 14.5131 4.91696 14.738 7.38461H12.2464C12.1709 5.52633 11.8195 3.81254 11.1731 2.51082C11.0558 2.27454 10.9249 2.05399 10.7885 1.84135ZM1.26202 8.61538H3.75361C3.82905 10.4737 4.18055 12.1875 4.82692 13.4892C4.94424 13.7255 5.07507 13.946 5.21154 14.1587C3.04789 13.1724 1.48694 11.083 1.26202 8.61538ZM4.98437 8.61538H7.38461V14.5084C6.87281 14.2607 6.36298 13.8149 5.92909 12.9411C5.38862 11.8527 5.06155 10.3052 4.98437 8.61538ZM8.61538 8.61538H11.0156C10.9385 10.3052 10.6114 11.8527 10.0709 12.9411C9.63702 13.8149 9.12719 14.2607 8.61538 14.5084V8.61538ZM12.2464 8.61538H14.738C14.5131 11.083 12.9521 13.1724 10.7885 14.1587C10.9249 13.946 11.0558 13.7255 11.1731 13.4892C11.8195 12.1875 12.1709 10.4737 12.2464 8.61538Z" fill="black"/>
+                                </svg></div> </li>
+                        </ul>
+
+
+
+                    <div class="tabs__content">
+                        <div class="header__menu-spoiler">
+
+                            <p class="header__menu-ru-text">Русский</p>
+
+                            <p class="header__menu-ru-text">Английский</p>
+
+                        </div>
+
+                    </div>
+                    <div class="tabs__content">
+
+                    </div>
+                </div>
+
+                <div class="header__menu-enter">
+
+                    <div class="header__menu-log">
+                        <div class="header__menu-line"></div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu__bar">
+            <div class="menu__bar-container">
+
+                <div class="menu__bar-header">
+
+                    <h2 class="menu__bar-title">
+                        Регистрация
+                    </h2>
+                </div>
+
+                    <div class="menu__bar-register">
+
+                        <h2 class="menu__bar-subtitle">
+                            Добро пожаловать в Eventplace
+                        </h2>
+
+                        <div class="menu__bar-label">
+                        <label for="number">
+                            <input type="tel" required placeholder="Номер телефона" id="number" class="menu__bar-input">
+                        </label>
+
+                        <label for="email">
+                            <input type="email" required placeholder="Электронная почта" id="email" class="menu__bar-input">
+                        </label>
+
+                        <label for="password">
+                            <input type="password" required placeholder="Пароль" id="password" class="menu__bar-input">
+                        </label>
+
+                        </div>
+
+                        <p class="menu__bar-letter">
+                            Мы отправим писмьо, чтобы подтвердить почту.
+                        </p>
+
+                        <div class="menu__bar-true">
+
+                            <label for="box">
+                                <input type="checkbox" class="menu__bar-checkbox" id="box">
+                            </label>
+
+                            <p class="menu__bar-textbox">
+                                Я хочу получать e-mail и sмs-рассылку с рекомендациями <br>
+                                интересных событий, анонсами, новостями, а также <br>
+                                информационные сообщения
+                            </p>
+
+                        </div>
+
+                        <div class="menu__bar-true">
+
+                            <label for="box2">
+                                <input type="checkbox" class="menu__bar-checkbox" id="box2">
+                            </label>
+
+                            <p class="menu__bar-textbox">
+                                Я ознакомлен и принимаю условия <span class="blue">пользовательского <br>
+                                соглашения</span> и <span class="blue"> политики конфидециальности </span>
+                            </p>
+
+                        </div>
+
+                        <p class="menu__bar-link">
+                            <a href="" class="menu__bar-reg">
+                            Зарегистрироваться
+                            </a>
+                        </p>
+
+                        <p class="menu__bar-acc">
+                            Уже есть аккаунт? <a href="#" class="menu__bar-link-enter">Войти</a>
+                        </p>
+
+                        <div class="menu__bar-for-google">
+                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1509967515%3A1664614058675467&authuser=0&continue=https%3A%2F%2Fwww.google.ru%2F%3Fpli%3D1&ec=GAlAmgQ&hl=ru&flowName=GlifWebSignIn&flowEntry=AddSession" class="menu__bar-google-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8055 8.0415H19V8H10V12H15.6515C14.827 14.3285 12.6115 16 10 16C6.6865 16 4 13.3135 4 10C4 6.6865 6.6865 4 10 4C11.5295 4 12.921 4.577 13.9805 5.5195L16.809 2.691C15.023 1.0265 12.634 0 10 0C4.4775 0 0 4.4775 0 10C0 15.5225 4.4775 20 10 20C15.5225 20 20 15.5225 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z" fill="#FFC107"/>
+                                <path d="M1.15332 5.3455L4.43882 7.755C5.32782 5.554 7.48082 4 10.0003 4C11.5298 4 12.9213 4.577 13.9808 5.5195L16.8093 2.691C15.0233 1.0265 12.6343 0 10.0003 0C6.15932 0 2.82832 2.1685 1.15332 5.3455Z" fill="#FF3D00"/>
+                                <path d="M10.0002 20.0003C12.5832 20.0003 14.9302 19.0118 16.7047 17.4043L13.6097 14.7853C12.6057 15.5458 11.3577 16.0003 10.0002 16.0003C7.39916 16.0003 5.19066 14.3418 4.35866 12.0273L1.09766 14.5398C2.75266 17.7783 6.11366 20.0003 10.0002 20.0003Z" fill="#4CAF50"/>
+                                <path d="M19.8055 8.0415H19V8H10V12H15.6515C15.2555 13.1185 14.536 14.083 13.608 14.7855C13.6085 14.785 13.609 14.785 13.6095 14.7845L16.7045 17.4035C16.4855 17.6025 20 15 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z" fill="#1976D2"/>
+                            </svg>
+                            <span class="menu__bar-google-text">С помощью Google</span>
+                        </a>
+                        </div>
+
+                        <div class="menu__bar-for-google" >
+                        <a href="https://www.facebook.com/" class="menu__bar-google-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.277344 0.27832H19.7218V19.7228H0.277344V0.27832Z" fill="#8BB7F0"/>
+                                <path d="M19.4444 0.555556V19.4444H0.555556V0.555556H19.4444ZM20 0H0V20H20V0Z" fill="#4E7AB5"/>
+                                <path d="M13.8886 19.4443V12.2221H16.6275L17.0152 9.44429H13.8886V7.56429C13.8886 6.69318 14.2786 6.09984 15.5275 6.09984L17.2219 6.09929V3.45818C16.9463 3.42151 15.8991 3.33984 14.7991 3.33984C12.5025 3.33984 11.1108 4.74151 11.1108 7.31595V9.44429H8.33301V12.2221H11.1108V19.4443H13.8886Z" fill="white"/>
+                            </svg>
+                            <span class="menu__bar-google-text">С помощью Facebook</span>
+                        </a>
+                        </div>
+
+                    </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="menu__bar menu__bar-second">
+            <div class="menu__bar-container">
+
+                <div class="menu__bar-header">
+
+                    <h2 class="menu__bar-title">
+                        Вход
+                    </h2>
+                </div>
+
+                <div class="menu__bar-register">
+
+                    <h2 class="menu__bar-subtitle">
+                        Добро пожаловать в Eventplace
+                    </h2>
+
+                    <div class="menu__bar-label">
+
+                        <label for="email2">
+                            <input type="email" required placeholder="Электронная почта" id="email2" class="menu__bar-input">
+                        </label>
+
+                        <label for="password2">
+                            <input type="password" required placeholder="Пароль" id="password2" class="menu__bar-input">
+                        </label>
+
+                    </div>
+
+                    <p class="p">
+                    <a href="" class="menu__bar-enter">
+                        Забыли пароль?
+                    </a>
+                    </p>
+
+
+                    <p class="menu__bar-link link">
+                        <a href="" class="menu__bar-reg">
+                            Войти
+                        </a>
+                    </p>
+
+                    <div class="menu__bar-for-google">
+                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1509967515%3A1664614058675467&authuser=0&continue=https%3A%2F%2Fwww.google.ru%2F%3Fpli%3D1&ec=GAlAmgQ&hl=ru&flowName=GlifWebSignIn&flowEntry=AddSession" class="menu__bar-google-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8055 8.0415H19V8H10V12H15.6515C14.827 14.3285 12.6115 16 10 16C6.6865 16 4 13.3135 4 10C4 6.6865 6.6865 4 10 4C11.5295 4 12.921 4.577 13.9805 5.5195L16.809 2.691C15.023 1.0265 12.634 0 10 0C4.4775 0 0 4.4775 0 10C0 15.5225 4.4775 20 10 20C15.5225 20 20 15.5225 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z" fill="#FFC107"/>
+                                <path d="M1.15332 5.3455L4.43882 7.755C5.32782 5.554 7.48082 4 10.0003 4C11.5298 4 12.9213 4.577 13.9808 5.5195L16.8093 2.691C15.0233 1.0265 12.6343 0 10.0003 0C6.15932 0 2.82832 2.1685 1.15332 5.3455Z" fill="#FF3D00"/>
+                                <path d="M10.0002 20.0003C12.5832 20.0003 14.9302 19.0118 16.7047 17.4043L13.6097 14.7853C12.6057 15.5458 11.3577 16.0003 10.0002 16.0003C7.39916 16.0003 5.19066 14.3418 4.35866 12.0273L1.09766 14.5398C2.75266 17.7783 6.11366 20.0003 10.0002 20.0003Z" fill="#4CAF50"/>
+                                <path d="M19.8055 8.0415H19V8H10V12H15.6515C15.2555 13.1185 14.536 14.083 13.608 14.7855C13.6085 14.785 13.609 14.785 13.6095 14.7845L16.7045 17.4035C16.4855 17.6025 20 15 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z" fill="#1976D2"/>
+                            </svg>
+                            <span class="menu__bar-google-text">С помощью Google</span>
+                        </a>
+                    </div>
+
+                    <div class="menu__bar-for-google" >
+                        <a href="https://www.facebook.com/" class="menu__bar-google-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.277344 0.27832H19.7218V19.7228H0.277344V0.27832Z" fill="#8BB7F0"/>
+                                <path d="M19.4444 0.555556V19.4444H0.555556V0.555556H19.4444ZM20 0H0V20H20V0Z" fill="#4E7AB5"/>
+                                <path d="M13.8886 19.4443V12.2221H16.6275L17.0152 9.44429H13.8886V7.56429C13.8886 6.69318 14.2786 6.09984 15.5275 6.09984L17.2219 6.09929V3.45818C16.9463 3.42151 15.8991 3.33984 14.7991 3.33984C12.5025 3.33984 11.1108 4.74151 11.1108 7.31595V9.44429H8.33301V12.2221H11.1108V19.4443H13.8886Z" fill="white"/>
+                            </svg>
+                            <span class="menu__bar-google-text">С помощью Facebook</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main class="main" >
+
+    <section class="smile">
+        <div class="container">
+
+            <div class="smile__block">
+
+                <div class="smile__block-type">
+                    <h2 class="smile__block-title">
+                        Тип события
+                    </h2>
+                    <p class="smile__block-text">
+                        Выберете своё мероприятие
+                    </p>
+                </div>
+
+                <div class="smile__block-start">
+
+                    <h2 class="smile__block-title">
+                        Начало
+                    </h2>
+
+                    <p class="smile__block-text">
+                        Когда?
+                    </p>
+
+                </div>
+
+                <div class="smile__block-end">
+                    <h2 class="smile__block-title">
+                        Конец
+                    </h2>
+
+                    <p class="smile__block-text">
+                        Когда?
+                    </p>
+                </div>
+
+                <div class="smile__block-guest">
+
+                    <h2 class="smile__block-title">
+                        Количество гостей
+                    </h2>
+
+                    <p class="smile__block-text">
+                        Кто приедет?
+                    </p>
+
+                </div>
+
+                <btn class="smile__block-glass">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10.5062" cy="10.5062" r="9.50619" stroke="white" stroke-width="2"/>
+                        <rect x="18.6328" y="16.5098" width="9.0053" height="3.00177" transform="rotate(45 18.6328 16.5098)" fill="white"/>
+                    </svg>
+                </btn>
+
+            </div>
+
+            <div class="smile__search">
+                <div class="smile__search-input">
+                    <label for="search">
+                        <input type="text" required placeholder="Поиск" class="smile__search-textarea" id="search">
+                    </label>
+                </div>
+                <div class="smile__search-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.56445" cy="7.56445" r="6.56445" stroke="white" stroke-width="2"/>
+                        <rect x="13.415" y="11.8867" width="6.48382" height="2.16127" transform="rotate(45 13.415 11.8867)" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header__place2">
+                <p class="header__place__krasnodar">
+                    Все площадки Краснодара
+                </p>
+
+                <p class="header__place__place">
+                    + Добавить площадку
+                </p>
+            </div>
+            <div class="smile__center">
+                <h2 class="smile__title">
+                    Eventplace -
+                </h2>
+
+                <p class="smile__text">
+                    с нами весело!
+                </p>
+
+                <button class="btn  smile__btn">
+                    <a href="./src/pages/room/index.html"> Найти место</a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="type">
+        <div class="container">
+
+            <p class="subtitle type__subtitle">
+                Любой тип площадки
+            </p>
+
+            <div class="type__gallery">
+
+                <div class="type__left">
+
+                    <div class="type__card">
+                        <a data-fancybox="gallery"  href="https://mossebo.studio/wp-content/uploads/blobid1565369744126.jpg" data-caption="Лофт">
+                        <img src="https://mossebo.studio/wp-content/uploads/blobid1565369744126.jpg" alt="" class="type__card-img img1">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Лофт
+                        </p>
+
+                    </div>
+
+                    <div class="type__card">
+                        <a data-fancybox="gallery"  href="https://novmetr.ru/wa-data/public/blog/img/163300408.jpg" data-caption="Коттеджи">
+                        <img src="https://novmetr.ru/wa-data/public/blog/img/163300408.jpg" alt="" class="type__card-img img1">
+                        </a>
+                        <p class="type__card-subtitle">
+                            Коттетджи
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="type__right">
+
+                    <div class="type__card type__card_3 ">
+                        <a class="b" data-fancybox="gallery" href="https://upload.wikimedia.org/wikipedia/commons/4/43/Bar-P1030319.jpg" data-caption="Бар">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bar-P1030319.jpg" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Бар
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_3">
+                        <a class="b" data-fancybox="gallery" href="https://cdn.botanichka.ru/wp-content/uploads/2016/03/besedka-serdtse-sada-01.jpg" data-caption="Беседки">
+                        <img src="https://cdn.botanichka.ru/wp-content/uploads/2016/03/besedka-serdtse-sada-01.jpg" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Беседки
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_3">
+                        <a class="b" data-fancybox="gallery" href="https://www.dizainvfoto.ru/wp-content/uploads/2018/02/dizajn-sauny-s-bassejnom.jpg" data-caption="Бани и сауны">
+                        <img src="https://www.dizainvfoto.ru/wp-content/uploads/2018/02/dizajn-sauny-s-bassejnom.jpg" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Cауны
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_2 first">
+                        <a class="b" data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-altay/247136/2a0000015b168a6c0c4c2052ff022580aea6/XXL" data-caption="Боулинг">
+                        <img src="https://avatars.mds.yandex.net/get-altay/247136/2a0000015b168a6c0c4c2052ff022580aea6/XXL" alt="" class="type__card-img img3">
+                        </a>
+                        <p class="type__card-subtitle">
+                            Боулинг
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_2 second2">
+                        <a class="b" data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-altay/1024093/2a0000016229c560cf26f11b96e3fe4e7996/XXL" data-caption="Квесты">
+                        <img src="https://avatars.mds.yandex.net/get-altay/1024093/2a0000016229c560cf26f11b96e3fe4e7996/XXL" alt="" class="type__card-img img3">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Квесты
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="container">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class="event__block-img">
+
+                                    <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+
+                            </div>
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class="event__block-img">
+
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+
+                            </div>
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class="event__block-img">
+
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+
+                            </div>
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class="event__block-img">
+
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+
+                            </div>
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="event__slide-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="type">
+        <div class="container">
+
+            <p class="subtitle type__subtitle">
+                Любой тип площадки
+            </p>
+
+            <div class="type__gallery 2">
+
+                <div class="type__right">
+
+                    <div class="type__card type__card_3 ">
+                        <a class="b" data-fancybox="gallery" href="https://moscowseasons.com/uploads/2019/07/15/5d2c88bab7c94.png" data-caption="Рестораны">
+                            <img src="https://moscowseasons.com/uploads/2019/07/15/5d2c88bab7c94.png" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle ">
+                            Рестораны
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_3 ">
+                        <a class="b" data-fancybox="gallery" href="https://cafe-manager.ru/img/kak-otkrit-antikafe.jpg" data-caption="Анткафе">
+                            <img src="https://cafe-manager.ru/img/kak-otkrit-antikafe.jpg" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Анткафе
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_3 ">
+                        <a class="b" data-fancybox="gallery" href="https://msk.crazyhall.ru/wp-content/uploads/2020/03/3-1.jpg" data-caption="Батуты">
+                            <img src="https://msk.crazyhall.ru/wp-content/uploads/2020/03/3-1.jpg" alt="" class="type__card-img img2">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Батуты
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_2 first">
+                        <a class="b" data-fancybox="gallery" href="https://rusapart.com/upload/medialibrary/91a/5.jpg" data-caption="Конференц-залы">
+                            <img src="https://rusapart.com/upload/medialibrary/91a/5.jpg" alt="" class="type__card-img img3">
+                        </a>
+                        <p class="type__card-subtitle">
+                            Конференц-залы
+                        </p>
+                    </div>
+
+                    <div class="type__card type__card_2 third">
+                        <a class="b" data-fancybox="gallery" href="https://bash.today/storage/uploads/posts/4fe592b4-632e-4d96-a24f-e1ba4431d420.jpg" data-caption="Студии (фото/видео)">
+                            <img src="https://bash.today/storage/uploads/posts/4fe592b4-632e-4d96-a24f-e1ba4431d420.jpg" alt="" class="type__card-img img3">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Студии
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="type__left">
+
+                    <div class="type__card fourth">
+                        <a data-fancybox="gallery"  href="https://vipidei.com/wp-content/uploads/2015/03/karaoke-bar.jpeg" data-caption="Караоке">
+                            <img src="https://vipidei.com/wp-content/uploads/2015/03/karaoke-bar.jpeg" alt="" class="type__card-img img1">
+                        </a>
+
+                        <p class="type__card-subtitle">
+                            Караоке
+                        </p>
+
+                    </div>
+
+                    <div class="type__card fourth">
+                        <a data-fancybox="gallery"  href="https://klike.net/uploads/posts/2020-03/1583483066_1.jpg" data-caption="Клуб">
+                            <img src="https://klike.net/uploads/posts/2020-03/1583483066_1.jpg" alt="" class="type__card-img img1">
+                        </a>
+                        <p class="type__card-subtitle">
+                            Клуб
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="container">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                            <div class="event__block-img">
+                                 <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                            <div class="event__block-img">
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                            <div class="event__block-img">
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" event__first-block">
+
+                            <div class=" event__block-text">
+                                <h2 class="event__title">
+                                    Эксклюзивные события
+                                </h2>
+                                <p class="event__text">
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. Найдем эксклюзивные мероприятия, которых <br>
+                                    больше ни у кого нет. <br>
+                                    <br>
+
+                                    Подберем самые интересные события на основе ваших <br>
+                                    предпочтений. <br>
+                                    Найдем эксклюзивные мероприятия, которых больше ни у <br>
+                                    кого нет
+                                </p>
+                            </div>
+
+                            <div class="event__block-img">
+                                <img src="./src/images/event/slide1.png" alt="" class="event__sa" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="event__slide-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="holiday">
+
+        <div class="container">
+
+            <p class="subtitle holiday__subtitle">
+                Любой тип события
+            </p>
+
+            <div class="holiday__boxes">
+
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="holiday__box last">
+
+                    <div class="holiday__box-img">
+                        <img src="./src/images/holiday/content.png" alt="">
+                    </div>
+
+                    <div class="holiday__box-info">
+                        <h2 class="holiday__box-title">
+                            Тип
+                        </h2>
+                        <p class="holiday__box-text">
+                            Мероприятия
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="map">
+
+    </section>
+
+</main>
+
+<footer class="footer" id="footer">
+
+    <div class="container">
+
+        <div class="footer__hidden">
+        <div class="footer__boxes">
+
+            <div class="footer__boxes-box1 ">
+
+                <ul class="footer__boxes-box1-ul">
+                    <li><a href="#" class="footer__boxes-box1-link">Наши преимущества</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">Как работает сервис?</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">Подключится к Eventplace</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">Гарантии и безопастность</a></li>
+                </ul>
+
+
+                <p class="footer__boxes-box1-bottom">
+                    © 2021 All rights reserved
+                </p>
+
+            </div>
+
+
+            <div class="footer__boxes-box1">
+
+                <ul class="footer__boxes-box1-ul">
+                    <li><a href="#" class="footer__boxes-box1-link">FAQ</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">Документы</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">Инвесторам</a></li>
+                    <li><a href="#" class="footer__boxes-box1-link">СМИ о нас</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer__boxes-box3">
+
+                <div class="footer__boxes-box3-icons">
+                    <a href="https://www.facebook.com/"><svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.867 23.4349V12.7382H11.4429L11.9752 8.56565H7.867V5.90377C7.867 4.67895 8.20019 3.86241 9.92719 3.86241H12.1215V0.163448C11.0578 0.0514966 9.98893 -0.00302794 8.91944 0.000129643C5.75395 0.000129643 3.58402 1.9435 3.58402 5.51179V8.58609H0V12.7586H3.58402V23.4349H7.867Z" fill="white"/>
+                    </svg></a>
+                    <a href="https://web.telegram.org/z/"><svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.3891 0.322094C24.9498 -0.0504441 24.2598 -0.103747 23.5464 0.182685H23.5452C22.7948 0.483761 2.30525 9.27238 1.47114 9.63145C1.31943 9.68416 -0.00554058 10.1785 0.13094 11.2798C0.252776 12.2726 1.31767 12.6838 1.44771 12.7312L6.6568 14.5149C7.00239 15.6653 8.2764 19.9096 8.55815 20.8164C8.73388 21.3816 9.02031 22.1244 9.5223 22.2772C9.96278 22.4471 10.4009 22.2919 10.6844 22.0693L13.8692 19.1154L19.0103 23.1248L19.1327 23.198C19.4818 23.3527 19.8163 23.43 20.1355 23.43C20.3821 23.43 20.6188 23.3837 20.8449 23.2912C21.6151 22.9749 21.9232 22.2409 21.9555 22.1577L25.7957 2.19709C26.03 1.13102 25.7043 0.588611 25.3891 0.322094ZM11.2508 15.2283L9.4936 19.9143L7.73634 14.0568L21.2086 4.09902L11.2508 15.2283Z" fill="white"/>
+                    </svg></a>
+                    <a href="https://www.instagram.com/"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79993 0C3.9811 0 0.875977 3.10513 0.875977 6.92395V16.511C0.875977 20.3298 3.9811 23.4349 7.79993 23.4349H17.3869C21.2058 23.4349 24.3109 20.3298 24.3109 16.511V6.92395C24.3109 3.10513 21.2058 0 17.3869 0H7.79993ZM18.9848 4.26089C19.5706 4.26089 20.05 4.74024 20.05 5.32612C20.05 5.91199 19.5706 6.39134 18.9848 6.39134C18.3989 6.39134 17.9195 5.91199 17.9195 5.32612C17.9195 4.74024 18.3989 4.26089 18.9848 4.26089ZM12.5934 5.85873C15.8264 5.85873 18.4522 8.4845 18.4522 11.7175C18.4522 14.9504 15.8264 17.5762 12.5934 17.5762C9.36048 17.5762 6.7347 14.9504 6.7347 11.7175C6.7347 8.4845 9.36048 5.85873 12.5934 5.85873ZM12.5934 6.92395C9.95168 6.92395 7.79993 9.0757 7.79993 11.7175C7.79993 14.3592 9.95168 16.511 12.5934 16.511C15.2352 16.511 17.3869 14.3592 17.3869 11.7175C17.3869 9.0757 15.2352 6.92395 12.5934 6.92395Z" fill="white"/>
+                    </svg></a>
+                    <a href="https://vk.com/"><svg width="39" height="24" viewBox="0 0 39 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.2827 21.0072C36.7235 18.2011 32.7071 14.8294 31.049 13.3621C30.5952 12.9604 30.5466 12.2654 30.9596 11.8211C34.124 8.42074 36.655 4.51362 37.5261 2.15269C37.9105 1.10975 37.1149 0.00780888 35.9938 0.00780888H32.7375C31.6641 0.00780888 31.036 0.393055 30.7366 1.0065C28.1067 6.3956 25.8508 8.7279 24.2716 10.091C23.3874 10.8546 22.0087 10.222 22.0087 9.06022C22.0087 6.82163 22.0087 3.92794 22.0087 1.8759C22.0087 0.880685 21.1948 0.0754872 20.1909 0.0754872L14.2422 0.00780888C13.4934 0.00780888 13.0656 0.855523 13.5151 1.44988L14.4973 2.85984C14.8669 3.34834 15.0665 3.9427 15.0665 4.55267L15.0613 10.9023C15.0613 12.0068 13.7225 12.5465 12.9277 11.7726C10.2388 9.15392 7.90559 3.80647 7.06569 1.24945C6.82274 0.509322 6.12947 0.00954422 5.34336 0.00780888L2.13558 0C0.932126 0 0.0523075 1.14099 0.379419 2.28978C3.31041 12.5778 9.32423 22.3651 20.0417 23.4262C21.0977 23.5304 22.0087 22.68 22.0087 21.6276V18.2905C22.0087 17.3335 22.7592 16.5109 23.7241 16.4866C23.7579 16.4857 23.7918 16.4857 23.8256 16.4857C26.6603 16.4857 29.8351 20.6115 30.9457 22.5412C31.265 23.0965 31.862 23.4349 32.5075 23.4349H36.8224C38.0814 23.4349 38.8892 22.0996 38.2827 21.0072Z" fill="white"/>
+                    </svg></a>
+                </div>
+
+                <p class="footer__boxes-box3-text">
+                    OOO “Eventpacle” <br>
+                    OOO “Eventpacle”
+                </p>
+
+            </div>
+
+        </div>
+            <div class="footer__link">
+                <a class=footer__text-end href="#">
+                    Конфиденциальность
+                </a>
+                <a class=footer__text-end href="#">
+                    Условия
+                </a>
+            </div>
+
+    </div>
+
+        <div class="footer__second">
+        <div class="tabs">
+
+            <ul class="tabs__caption">
+                <li class="tabs__content-btn">О нас</li>
+                <li class="bir  "></li>
+            </ul>
+
+            <div class="tabs__content ">
+                <div class="footer__boxes-box1 border">
+
+                    <ul class="footer__boxes-box1-ul">
+                        <li><a href="#" class="footer__boxes-box1-link">Наши преимущества</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">Как работает сервис?</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">Подключится к Eventplace</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">Гарантии и безопастность</a></li>
+                    </ul>
+
+
+                    <p class="footer__boxes-box1-bottom ">
+                        © 2021 All rights reserved
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="tabs__content">
+
+            </div>
+        </div>
+
+
+        <div class="tabs">
+
+            <ul class="tabs__caption">
+                <li class=""></li>
+                <li class="tabs__content-btn ">FAQ</li>
+            </ul>
+
+            <div class="tabs__content ">
+
+            </div>
+
+            <div class="tabs__content">
+                <div class="footer__boxes-box1 border">
+
+                    <ul class="footer__boxes-box1-ul">
+                        <li><a href="#" class="footer__boxes-box1-link">FAQ</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">Документы</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">Инвесторам</a></li>
+                        <li><a href="#" class="footer__boxes-box1-link">СМИ о нас</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__boxes-box3 border2">
+
+            <div class="footer__boxes-box3-icons">
+                <a href="https://www.facebook.com/"><svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.867 23.4349V12.7382H11.4429L11.9752 8.56565H7.867V5.90377C7.867 4.67895 8.20019 3.86241 9.92719 3.86241H12.1215V0.163448C11.0578 0.0514966 9.98893 -0.00302794 8.91944 0.000129643C5.75395 0.000129643 3.58402 1.9435 3.58402 5.51179V8.58609H0V12.7586H3.58402V23.4349H7.867Z" fill="white"/>
+                </svg></a>
+                <a href="https://web.telegram.org/z/"><svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.3891 0.322094C24.9498 -0.0504441 24.2598 -0.103747 23.5464 0.182685H23.5452C22.7948 0.483761 2.30525 9.27238 1.47114 9.63145C1.31943 9.68416 -0.00554058 10.1785 0.13094 11.2798C0.252776 12.2726 1.31767 12.6838 1.44771 12.7312L6.6568 14.5149C7.00239 15.6653 8.2764 19.9096 8.55815 20.8164C8.73388 21.3816 9.02031 22.1244 9.5223 22.2772C9.96278 22.4471 10.4009 22.2919 10.6844 22.0693L13.8692 19.1154L19.0103 23.1248L19.1327 23.198C19.4818 23.3527 19.8163 23.43 20.1355 23.43C20.3821 23.43 20.6188 23.3837 20.8449 23.2912C21.6151 22.9749 21.9232 22.2409 21.9555 22.1577L25.7957 2.19709C26.03 1.13102 25.7043 0.588611 25.3891 0.322094ZM11.2508 15.2283L9.4936 19.9143L7.73634 14.0568L21.2086 4.09902L11.2508 15.2283Z" fill="white"/>
+                </svg></a>
+                <a href="https://www.instagram.com/"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.79993 0C3.9811 0 0.875977 3.10513 0.875977 6.92395V16.511C0.875977 20.3298 3.9811 23.4349 7.79993 23.4349H17.3869C21.2058 23.4349 24.3109 20.3298 24.3109 16.511V6.92395C24.3109 3.10513 21.2058 0 17.3869 0H7.79993ZM18.9848 4.26089C19.5706 4.26089 20.05 4.74024 20.05 5.32612C20.05 5.91199 19.5706 6.39134 18.9848 6.39134C18.3989 6.39134 17.9195 5.91199 17.9195 5.32612C17.9195 4.74024 18.3989 4.26089 18.9848 4.26089ZM12.5934 5.85873C15.8264 5.85873 18.4522 8.4845 18.4522 11.7175C18.4522 14.9504 15.8264 17.5762 12.5934 17.5762C9.36048 17.5762 6.7347 14.9504 6.7347 11.7175C6.7347 8.4845 9.36048 5.85873 12.5934 5.85873ZM12.5934 6.92395C9.95168 6.92395 7.79993 9.0757 7.79993 11.7175C7.79993 14.3592 9.95168 16.511 12.5934 16.511C15.2352 16.511 17.3869 14.3592 17.3869 11.7175C17.3869 9.0757 15.2352 6.92395 12.5934 6.92395Z" fill="white"/>
+                </svg></a>
+                <a href="https://vk.com/"><svg width="39" height="24" viewBox="0 0 39 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.2827 21.0072C36.7235 18.2011 32.7071 14.8294 31.049 13.3621C30.5952 12.9604 30.5466 12.2654 30.9596 11.8211C34.124 8.42074 36.655 4.51362 37.5261 2.15269C37.9105 1.10975 37.1149 0.00780888 35.9938 0.00780888H32.7375C31.6641 0.00780888 31.036 0.393055 30.7366 1.0065C28.1067 6.3956 25.8508 8.7279 24.2716 10.091C23.3874 10.8546 22.0087 10.222 22.0087 9.06022C22.0087 6.82163 22.0087 3.92794 22.0087 1.8759C22.0087 0.880685 21.1948 0.0754872 20.1909 0.0754872L14.2422 0.00780888C13.4934 0.00780888 13.0656 0.855523 13.5151 1.44988L14.4973 2.85984C14.8669 3.34834 15.0665 3.9427 15.0665 4.55267L15.0613 10.9023C15.0613 12.0068 13.7225 12.5465 12.9277 11.7726C10.2388 9.15392 7.90559 3.80647 7.06569 1.24945C6.82274 0.509322 6.12947 0.00954422 5.34336 0.00780888L2.13558 0C0.932126 0 0.0523075 1.14099 0.379419 2.28978C3.31041 12.5778 9.32423 22.3651 20.0417 23.4262C21.0977 23.5304 22.0087 22.68 22.0087 21.6276V18.2905C22.0087 17.3335 22.7592 16.5109 23.7241 16.4866C23.7579 16.4857 23.7918 16.4857 23.8256 16.4857C26.6603 16.4857 29.8351 20.6115 30.9457 22.5412C31.265 23.0965 31.862 23.4349 32.5075 23.4349H36.8224C38.0814 23.4349 38.8892 22.0996 38.2827 21.0072Z" fill="white"/>
+                </svg></a>
+            </div>
+            <p class="footer__boxes-box3-text">
+                OOO “Eventpacle” <br>
+                OOO “Eventpacle”
+            </p>
+        </div>
+        </div>
+    </div>
+</footer>
+
+<script src="src/js/jquery-3.6.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script src="./src/js/main.js"></script>
+</body>
+</html>

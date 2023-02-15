@@ -1,0 +1,17 @@
+.social {
+  padding-top: 20px;
+}
+.social__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+}
+.social__subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #A9A9A9;
+}

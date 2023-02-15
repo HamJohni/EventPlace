@@ -1,0 +1,162 @@
+.type{
+  padding: 90px 0 80px;
+
+  &__subtitle{
+    margin-bottom: 40px;
+  }
+
+  &__gallery{
+    display: flex;
+    column-gap: 15px;
+
+  }
+
+  &__left{
+    width: 30%;
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+  }
+
+  &__right{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__card{
+    width: 100%;
+    position: relative;
+
+    &-subtitle{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background-color: #B13957;
+      padding: 4px 19px;
+      color: #fff;
+      border: none;
+      border-radius: 32px;
+    }
+
+    &-img{
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+    }
+
+    &_3{
+      width: calc(33.33333% - 10px);
+    }
+
+    &_2{
+      width: calc(50% - 7.5px);
+    }
+  }
+
+
+}
+
+.img2{
+  height: 156px;
+}
+.img1{
+  height: 197px;
+}
+.img3{
+  height: 239px;
+}
+
+.type__card-subtitle:hover{
+  transition: .5s;
+  transform: scale(1.1);
+  background-color: orange;
+}
+.type__card:hover{
+  transition: .5s;
+  transform: scale(1.04);
+  background-color: orange;
+  border-radius: 9px;
+}
+
+@media (max-width: 750px) {
+  .type__gallery {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .type__left {
+    width: 100%;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .type__right {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .type__gallery {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .type__left {
+    width: 100%;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .type__right {
+    width: 100%;
+  }
+}
+
+@media(max-width: 470px) {
+  .type__card_3{
+    width:calc(50% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img2{
+    height: 170px;
+  }
+  .second2{
+    width: 70%;
+    margin-left: 17%;
+  }
+  .third{
+    width: calc(70% - 10px);
+    margin-left: 15%;
+  }
+  .fourth{
+    width: calc(50% - 10px);
+  }
+  .img3{
+    height: 170px;
+  }
+  .first{
+    width: calc(50% - 10px);
+    margin-right:-50px ;
+    height: 176px;
+  }
+}
+
+@media (max-width: 375px) {
+  .type__left{
+    flex-wrap: wrap;
+  }
+  .type__card{
+    width: 100%;
+  }
+  .b{
+    width: 100%;
+  }
+  .second2{
+    margin: 0;
+    width: 100%;
+  }
+  .third{
+    margin: 0;
+    width: 100%;
+  }
+}
